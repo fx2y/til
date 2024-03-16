@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.16.0/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.16.0/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.16.0/dist/index.js"></script><script>(()=>{setTimeout(()=>{const{markmap:H,mm:ae}=window,W=new H.Toolbar;W.attach(ae);const we=W.render();we.setAttribute("style","position:absolute;bottom:20px;right:20px"),document.body.append(we)})})()</script><script>((o,T,c,r)=>{const g=o();window.mm=g.Markmap.create("svg#mindmap",(T||g.deriveOptions)(r),c)})(()=>window.markmap,null,{"content":"Optimizing Redis Server Load Distribution","children":[{"content":"Assess Server Load and Performance","children":[{"content":"Use <code>INFO</code> command for metrics: memory usage, CPU load, connections, command stats","children":[],"payload":{"lines":"7,9"}}],"payload":{"lines":"6,7"}},{"content":"Analyze Command Statistics","children":[{"content":"<code>INFO commandstats</code> for command execution patterns","children":[],"payload":{"lines":"10,12"}}],"payload":{"lines":"9,10"}},{"content":"Monitor Network Traffic","children":[{"content":"Tools: <code>iftop</code>, <code>nload</code> for traffic analysis","children":[],"payload":{"lines":"13,15"}}],"payload":{"lines":"12,13"}},{"content":"Debugging Latency and Slow Commands","children":[{"content":"<code>SLOWLOG</code> command to identify slow commands","children":[],"payload":{"lines":"16,18"}}],"payload":{"lines":"15,16"}},{"content":"Check for Key Distribution","children":[{"content":"Ensure even key distribution with <code>redis-cli --scan</code>","children":[],"payload":{"lines":"19,21"}}],"payload":{"lines":"18,19"}},{"content":"Configuration and Tuning","children":[{"content":"Adjust <code>maxmemory</code>, <code>maxmemory-policy</code>, AOF, RDB settings","children":[],"payload":{"lines":"22,24"}}],"payload":{"lines":"21,22"}},{"content":"Load Balancing","children":[{"content":"Implement load balancer or use Redis Cluster for automatic balancing","children":[],"payload":{"lines":"25,27"}}],"payload":{"lines":"24,25"}},{"content":"Use Redis Cluster","children":[{"content":"Automatic sharding and load balancing","children":[],"payload":{"lines":"28,30"}}],"payload":{"lines":"27,28"}},{"content":"Client-Side Improvements","children":[{"content":"Connection pooling, pipelining, caching strategy review","children":[],"payload":{"lines":"31,33"}}],"payload":{"lines":"30,31"}},{"content":"Hardware Considerations","children":[{"content":"Scale up CPU, RAM, or add more servers","children":[],"payload":{"lines":"34,36"}}],"payload":{"lines":"33,34"}},{"content":"Alternative Approaches","children":[{"content":"Data Partitioning, Redis Sentinel for high availability and load smoothing","children":[],"payload":{"lines":"37,38"}}],"payload":{"lines":"36,37"}}],"payload":{"lines":"4,5"}},null)</script>
+</body>
+</html>
