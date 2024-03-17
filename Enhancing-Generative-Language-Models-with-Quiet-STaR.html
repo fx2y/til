@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.16.0/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.16.0/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.16.0/dist/index.js"></script><script>(()=>{setTimeout(()=>{const{markmap:H,mm:ae}=window,W=new H.Toolbar;W.attach(ae);const we=W.render();we.setAttribute("style","position:absolute;bottom:20px;right:20px"),document.body.append(we)})})()</script><script>((o,T,c,r)=>{const g=o();window.mm=g.Markmap.create("svg#mindmap",(T||g.deriveOptions)(r),c)})(()=>window.markmap,null,{"content":"Enhancing Generative Language Models with Quiet-STaR","children":[{"content":"Rationale Generation","children":[{"content":"Implement a module for generating rationale candidates","children":[{"content":"Capable of parallel processing","children":[],"payload":{"lines":"9,10"}},{"content":"Use pre-generated or dynamically generated rationales","children":[],"payload":{"lines":"10,12"}}],"payload":{"lines":"8,12"}}],"payload":{"lines":"7,8"}},{"content":"Utility Assessment","children":[{"content":"Develop a mixing head mechanism","children":[{"content":"Evaluates utility of each rationale","children":[],"payload":{"lines":"14,15"}},{"content":"Adjusts influence based on perceived utility","children":[],"payload":{"lines":"15,17"}}],"payload":{"lines":"13,17"}}],"payload":{"lines":"12,13"}},{"content":"Optimization","children":[{"content":"Apply REINFORCE approach","children":[{"content":"Favor rationales enhancing prediction accuracy","children":[],"payload":{"lines":"19,20"}},{"content":"Incorporate a reward system","children":[],"payload":{"lines":"20,22"}}],"payload":{"lines":"18,22"}}],"payload":{"lines":"17,18"}},{"content":"Integration with Existing Architectures","children":[{"content":"Compatible with Mistral architecture","children":[],"payload":{"lines":"23,24"}},{"content":"Seamless communication with model's prediction mechanisms","children":[],"payload":{"lines":"24,26"}}],"payload":{"lines":"22,23"}},{"content":"Evaluation and Iteration","children":[{"content":"Conduct evaluations on reasoning tasks (e.g., GSM8K, CommonsenseQA)","children":[],"payload":{"lines":"27,28"}},{"content":"Iteratively refine processes based on evaluations","children":[],"payload":{"lines":"28,30"}}],"payload":{"lines":"26,27"}},{"content":"Scalability","children":[{"content":"Ensure scalability with rationale length","children":[],"payload":{"lines":"31,32"}},{"content":"Optimize for increased computational loads","children":[],"payload":{"lines":"32,34"}}],"payload":{"lines":"30,31"}},{"content":"Alternative Approaches","children":[{"content":"Consider other reinforcement learning algorithms (PPO, TRPO)","children":[],"payload":{"lines":"35,36"}},{"content":"Explore external rationale generation techniques","children":[],"payload":{"lines":"36,37"}}],"payload":{"lines":"34,35"}}],"payload":{"lines":"5,6"}},{"maxWidth":300})</script>
+</body>
+</html>
