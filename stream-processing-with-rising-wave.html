@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.16.0/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.16.0/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.16.0/dist/index.js"></script><script>(()=>{setTimeout(()=>{const{markmap:H,mm:ae}=window,W=new H.Toolbar;W.attach(ae);const we=W.render();we.setAttribute("style","position:absolute;bottom:20px;right:20px"),document.body.append(we)})})()</script><script>((o,T,c,r)=>{const g=o();window.mm=g.Markmap.create("svg#mindmap",(T||g.deriveOptions)(r),c)})(()=>window.markmap,null,{"content":"Stream Processing with Rising Wave","children":[{"content":"Introduction","children":[{"content":"Overview of workshop","children":[],"payload":{"lines":"4,5"}},{"content":"Focus on stream processing in SQL with Rising Wave","children":[],"payload":{"lines":"5,7"}}],"payload":{"lines":"3,4"}},{"content":"Stream Processing vs Batch Processing","children":[{"content":"Characteristics of stream vs batch data","children":[],"payload":{"lines":"8,9"}},{"content":"Advantages of stream processing for real-time data analysis","children":[],"payload":{"lines":"9,11"}}],"payload":{"lines":"7,8"}},{"content":"Rising Wave Overview","children":[{"content":"Architecture","children":[{"content":"Front End (User Interface)","children":[],"payload":{"lines":"13,14"}},{"content":"Compute Node (Query Execution)","children":[],"payload":{"lines":"14,15"}},{"content":"Object Storage (Persistence)","children":[],"payload":{"lines":"15,16"}},{"content":"Meta Server (Cluster Management)","children":[],"payload":{"lines":"16,17"}}],"payload":{"lines":"12,17"}},{"content":"Key Features","children":[{"content":"SQL interface","children":[],"payload":{"lines":"18,19"}},{"content":"Low latency","children":[],"payload":{"lines":"19,20"}},{"content":"High throughput","children":[],"payload":{"lines":"20,21"}},{"content":"Fault tolerance","children":[],"payload":{"lines":"21,23"}}],"payload":{"lines":"17,23"}}],"payload":{"lines":"11,12"}},{"content":"Data Ingestion and Processing","children":[{"content":"Ingesting data from Kafka","children":[],"payload":{"lines":"24,25"}},{"content":"Delivering data to downstream systems like ClickHouse","children":[],"payload":{"lines":"25,26"}},{"content":"Stateless and Stateful computations","children":[],"payload":{"lines":"26,27"}},{"content":"Creating and using Materialized Views for efficient data processing","children":[],"payload":{"lines":"27,29"}}],"payload":{"lines":"23,24"}},{"content":"Hands-On Project","children":[{"content":"Setting up Rising Wave with Docker","children":[],"payload":{"lines":"30,31"}},{"content":"Ingesting and processing streaming data","children":[],"payload":{"lines":"31,32"}},{"content":"Analyzing social media and IoT sensor data","children":[],"payload":{"lines":"32,33"}},{"content":"Creating materialized views for real-time analytics","children":[],"payload":{"lines":"33,35"}}],"payload":{"lines":"29,30"}},{"content":"Conclusion","children":[{"content":"Recap of stream processing with Rising Wave","children":[],"payload":{"lines":"36,37"}},{"content":"Importance of stream processing in modern data architectures","children":[],"payload":{"lines":"37,38"}}],"payload":{"lines":"35,36"}}],"payload":{"lines":"1,2"}},{"colorFreezeLevel":2})</script>
+</body>
+</html>
