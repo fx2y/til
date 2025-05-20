@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Convergence: 2025 Snapshot</title>
+  <meta name="viewport" content="width=1024, initial-scale=1">
+  <meta name="description" content="Dense, one-page infographic visualizing the accelerating, interconnected landscape of AI development and deployment as of mid-2025. For tech professionals.">
+  <!-- Social preview (Open Graph, Twitter, LinkedIn) -->
+  <meta property="og:title" content="AI Convergence: 2025 Snapshot" />
+  <meta property="og:description" content="Dense, information-rich visual summary of the AI ecosystem as of mid-2025." />
+  <meta property="og:image" content="https://til.khusy.uk/2025/21/gemini-25-flashs-ai-breakthrough.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://til.khusy.uk/2025/21/gemini-25-flashs-ai-breakthrough.html" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AI Convergence: 2025 Snapshot" />
+  <meta name="twitter:description" content="Dense, information-rich visual summary of the AI ecosystem as of mid-2025." />
+  <meta name="twitter:image" content="https://til.khusy.uk/2025/21/gemini-25-flashs-ai-breakthrough.png" />
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --deep-blue: #0A2A4E;
+      --dark-teal: #0B6E6E;
+      --gray: #6c757d;
+      --orange: #FF6F00;
+      --cyan: #00FFFF;
+      --background: #091929;
+      --white: #FAFAFA;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: var(--background);
+      color: var(--white);
+      font-family: 'Open Sans', Arial, sans-serif;
+    }
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0 0 24px 0;
+      background: linear-gradient(120deg, var(--deep-blue) 70%, var(--dark-teal) 100%);
+    }
+
+    header {
+      margin-top: 36px;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    .main-title {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-weight: 700;
+      font-size: 2.1rem;
+      letter-spacing: 0.04em;
+      color: var(--white);
+      background: linear-gradient(90deg, var(--cyan) 10%, var(--orange) 90%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .infographic-container {
+      position: relative;
+      max-width: 940px;
+      min-width: 760px;
+      margin: 0 auto 18px auto;
+      width: 100vw;
+      aspect-ratio: 1.25/1;
+      background: rgba(10,42,78,0.11);
+      border-radius: 32px;
+      box-shadow: 0 6px 36px 0 rgba(0,0,0,0.11), 0 1.5px 6px 0 rgba(0,0,0,0.17);
+      overflow: visible;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+    }
+
+    /* --- Central Core --- */
+    .central-core {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 180px;
+      height: 180px;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .central-core-bg {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: radial-gradient(circle at 60% 40%, var(--cyan) 7%, var(--deep-blue) 70%);
+      box-shadow: 0 0 32px 8px var(--cyan), 0 0 0 4px var(--orange), 0 0 0 10px rgba(0,255,255,0.10);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .central-core-title {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 1.19rem;
+      font-weight: 700;
+      text-align: center;
+      color: var(--orange);
+      text-shadow: 0 0 5px var(--cyan), 0 0 2px var(--dark-teal);
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+      padding: 8px 0;
+      user-select: none;
+    }
+    .core-animation {
+      position: absolute;
+      top: 50%; left: 50%;
+      width: 190px; height: 190px;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      z-index: 2;
+    }
+    .core-animation svg { width: 100%; height: 100%; }
+
+    /* --- Node Layout --- */
+    .nodes-grid {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .node-zone {
+      position: absolute;
+      width: 250px;
+      min-height: 90px;
+      background: rgba(11,110,110,0.15);
+      border-radius: 24px;
+      box-shadow: 0 0 8px 0 rgba(0,255,255,0.07);
+      border: 1.5px solid var(--gray);
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 18px 18px 12px 16px;
+      transition: box-shadow 0.2s;
+      pointer-events: auto;
+      user-select: none;
+      font-size: 0.99rem;
+    }
+    .node-zone:hover {
+      box-shadow: 0 0 20px 2px var(--cyan), 0 1px 12px 0 var(--orange);
+      border-color: var(--cyan);
+    }
+    .node-icon {
+      min-width: 36px;
+      min-height: 36px;
+      width: 36px;
+      height: 36px;
+      background: rgba(0,255,255,0.07);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25em;
+    }
+    .node-data {
+      display: flex;
+      flex-direction: column;
+      gap: 3.5px;
+      flex: 1;
+    }
+    .node-title {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-weight: 700;
+      color: var(--cyan);
+      font-size: 1.03rem;
+      margin-bottom: 2px;
+      letter-spacing: 0.01em;
+    }
+    .node-list {
+      font-family: 'Open Sans', Arial, sans-serif;
+      color: var(--white);
+      font-size: 0.93em;
+      margin-bottom: 2px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5px;
+    }
+    .node-caption {
+      font-size: 0.74em;
+      color: var(--gray);
+      font-family: 'Open Sans', Arial, sans-serif;
+      margin-top: 2.5px;
+      line-height: 1.05;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+    }
+
+    /* Node Positions (circular layout) */
+    /* 9 nodes, slightly irregular for visual interest */
+    .arena    { top: 6%;  left: 46%; }
+    .duality  { top: 16%; right: 6%; }
+    .multi    { top: 37%; right: 1.5%; }
+    .tiers    { top: 60%; right: 7.5%; }
+    .integration { bottom: 12%; right: 29%; }
+    .edge     { bottom: 3%;  left: 42%; }
+    .arch     { bottom: 11%; left: 12%; }
+    .trust    { top: 53%; left: 2.3%; }
+    .compute  { top: 18%; left: 15.5%; }
+
+    /* Connecting lines (SVG overlay) */
+    .lines-svg {
+      position: absolute;
+      left: 0; top: 0; width: 100%; height: 100%;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 18px;
+      text-align: center;
+      font-size: 0.92em;
+      color: var(--gray);
+      letter-spacing: 0.01em;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 1200px) {
+      .infographic-container {
+        max-width: 99vw;
+        min-width: 630px;
+      }
+      .node-zone { width: 200px; min-height: 80px; font-size: 0.91rem;}
+      .central-core, .central-core-bg, .core-animation { width: 120px; height: 120px;}
+    }
+    @media (max-width: 800px) {
+      .infographic-container { min-width: 320px; max-width: 100vw;}
+      .node-zone { width: 132px; min-height: 65px; font-size: 0.83rem; padding: 11px 8px 6px 7px;}
+      .central-core, .central-core-bg, .core-animation { width: 77px; height: 77px;}
+      .main-title { font-size: 1.14rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="main-title">AI Convergence: 2025 Snapshot</div>
+  </header>
+  <div class="infographic-container">
+    <!-- Central Core -->
+    <div class="central-core">
+      <div class="central-core-bg">
+        <div class="central-core-title">
+          <span>AI Advancement</span>
+          <br>
+          <svg width="34" height="13" viewBox="0 0 34 13" style="margin-top:6px">
+            <rect x="2" y="6" width="3" height="5" rx="1.5" fill="#FF6F00" />
+            <rect x="7" y="3" width="3" height="8" rx="1.5" fill="#00FFFF" />
+            <rect x="12" y="1" width="3" height="10" rx="1.5" fill="#FF6F00" />
+            <rect x="17" y="0" width="3" height="12" rx="1.5" fill="#00FFFF" />
+            <rect x="22" y="3" width="3" height="8" rx="1.5" fill="#FF6F00" />
+            <rect x="27" y="6" width="3" height="5" rx="1.5" fill="#00FFFF" />
+          </svg>
+        </div>
+      </div>
+      <!-- Dynamic abstract animated core (SVG) -->
+      <div class="core-animation">
+        <svg>
+          <circle cx="95" cy="95" r="90" stroke="#00FFFF77" stroke-width="2.4" fill="none" />
+          <circle cx="95" cy="95" r="78" stroke="#FF6F0077" stroke-width="1.1" fill="none" stroke-dasharray="6 10" stroke-dashoffset="7" />
+          <circle cx="95" cy="95" r="60" stroke="#00FFFF33" stroke-width="1.2" fill="none" stroke-dasharray="4 8" stroke-dashoffset="15" />
+        </svg>
+      </div>
+    </div>
+    <!-- Connection lines (SVG) -->
+    <svg class="lines-svg" viewBox="0 0 940 704" fill="none">
+      <!-- Each line: core (470,352) to node centers (approximate coords for 9 nodes) -->
+      <polyline points="470,352 470,80" stroke="#00FFFF99" stroke-width="2" />
+      <polyline points="470,352 770,165" stroke="#FF6F00aa" stroke-width="2" />
+      <polyline points="470,352 900,280" stroke="#00FFFF88" stroke-width="2" />
+      <polyline points="470,352 865,470" stroke="#FF6F0088" stroke-width="2" />
+      <polyline points="470,352 695,630" stroke="#00FFFF77" stroke-width="2" />
+      <polyline points="470,352 470,670" stroke="#FF6F0077" stroke-width="2" />
+      <polyline points="470,352 200,600" stroke="#00FFFF55" stroke-width="2" />
+      <polyline points="470,352 70,410" stroke="#FF6F0055" stroke-width="2" />
+      <polyline points="470,352 140,170" stroke="#00FFFF44" stroke-width="2" />
+    </svg>
+
+    <!-- Nodes (zones), 9 sections -->
+    <div class="node-zone arena">
+      <span class="node-icon" title="Performance">
+        <!-- Leaderboard icon + math/code/vision glyphs -->
+        <svg width="26" height="26" viewBox="0 0 26 26">
+          <rect x="3" y="15" width="5" height="7" rx="2" fill="#FF6F00"/>
+          <rect x="11" y="6" width="5" height="16" rx="2" fill="#00FFFF"/>
+          <rect x="19" y="10" width="5" height="12" rx="2" fill="#6c757d"/>
+        </svg>
+      </span>
+      <span class="node-data">
+        <span class="node-title">Performance & Benchmarks</span>
+        <span class="node-list" style="font-size:0.97em;">
+          <span><b>Gemini-2.5-Flash</b> <span style="font-size:0.86em;color:var(--gray);">#2</span> <svg width="15" height="14" style="vertical-align:middle"><text x="1" y="11" font-size="13" font-family="Arial" fill="#FF6F00">π</text></svg> <span style="font-size:0.80em;color:var(--gray);">LMArena</span></span>
+          <span><b>Gemini 2.5 Pro</b> <svg width="12" height="12" style="vertical-align:middle"><text x="0" y="10" font-size="11" font-family="Arial" fill="#00FFFF">&lt;/&gt;</text></svg> <span style="font-size:0.85em;color:var(--gray);">USAMO 49.4%, LiveCodeBench 80.4%, MMMU 84.0%</span></span>
+        </span>
+        <span class="node-caption">Rapid Ranking Shifts</span>
+      </span>
+    </div>
+    <div class="node-zone duality">
+      <span class="node-icon" title="Innovation">
+        <!-- Split box/lock and gears -->
+        <svg width="32" height="32" viewBox="0 0 32 32">
+          <rect x="2" y="7" width="13" height="18" rx="4" fill="#0A2A4E" stroke="#FF6F00" stroke-width="2"/>
+          <rect x="3" y="12" width="11" height="10" rx="2.5" fill="#0B6E6E"/>
+          <path d="M8 14v4" stroke="#FF6F00" stroke-width="2"/>
+          <circle cx="20" cy="19" r="7" fill="#0B6E6E" stroke="#00FFFF" stroke-width="2"/>
+          <g>
+            <circle cx="20" cy="19" r="2.2" fill="#FF6F00"/>
+            <path d="M20 12.2v2.5M20 23.4v2.4M12.9 19h2.4M24.7 19h2.4M14.7 14.7l1.7 1.7M23.6 22.6l1.7 1.7M14.7 23.3l1.7-1.7M23.6 15.4l1.7-1.7"
+                  stroke="#00FFFF" stroke-width="1"/>
+          </g>
+        </svg>
+      </span>
+      <span class="node-data">
+        <span class="node-title">Proprietary & Open Paths</span>
+        <span class="node-list">
+          <span><b>Google:</b> "Undisclosed Breakthroughs"</span>
+          <span><b>Gemma 3n:</b> Open Mobile-First Arch.</span>
+        </span>
+        <span class="node-caption">Dual Development Drives</span>
+      </span>
+    </div>
+    <div class="node-zone multi">
+      <span class="node-icon" title="Multimodal">
+        <!-- Film, audio, image, doc -->
+        <svg width="34" height="34" viewBox="0 0 34 34">
+          <rect x="2" y="9" width="11" height="15" rx="2" fill="#0A2A4E" stroke="#00FFFF" stroke-width="1.6"/>
+          <rect x="16" y="5" width="14" height="11" rx="2.4" fill="#0B6E6E" stroke="#FF6F00" stroke-width="1.6"/>
+          <rect x="17" y="20" width="13" height="8" rx="2.1" fill="#6c757d"/>
+          <path d="M5 12l6 6" stroke="#FF6F00" stroke-width="1.3"/>
+          <circle cx="19.2" cy="10.7" r="2.1" fill="#00FFFF" />
+          <rect x="8" y="27" width="10" height="2.4" rx="1.2" fill="#FF6F00"/>
+        </svg>
+      </span>
+      <span class="node-data">
+        <span class="node-title">Multimodal Mastery</span>
+        <span class="node-list">
+          <span><b>Veo 3:</b> Video+Audio Gen</span>
+          <span><b>Imagen 4:</b> Hi-Fi Images</span>
+          <span><b>Gemma 3n:</b> Audio/Image/Text On-Device</span>
+        </span>
+        <span class="node-caption">Beyond Text: Sensory AI</span>
+      </span>
+    </div>
+    <div class="node-zone tiers">
+      <span class="node-icon" title="Tiers">
+        <!-- Pyramid/concentric -->
+        <svg width="32" height="32" viewBox="0 0 32 32">
+          <polygon points="16,4 30,28 2,28" fill="#0A2A4E" stroke="#00FFFF" stroke-width="1.5"/>
+          <polygon points="16,10 25,26 7,26" fill="#0B6E6E" stroke="#FF6F00" stroke-width="1.1"/>
+          <circle cx="16" cy="19" r="4.2" fill="#FF6F00" />
+        </svg>
+      </span>
+      <span class="node-data">
+        <span class="node-title">Tiered Offerings</span>
+        <span class="node-list">
+          <span>Base/Free</span>
+          <span>Pro (Google AI Pro + Flow/Veo 2)</span>
+          <span>Ultra (Google AI Ultra $249/mo, Veo 3, Deep Think)</span>
+        </span>
+        <span class="node-caption">Monetizing Advanced AI</span>
+      </span>
+    </div>
+    <div class="node-zone integration">
+      <span class="node-icon" title="Integration">
+        <!-- App icons + spark -->
+        <svg width="34" height="34" viewBox="0 0 34 34">
+          <rect x="2" y="3" width="9" height="9" rx="2.1" fill="#0B6E6E" />
+          <rect x="13" y="3" width="9" height="9" rx="2.1" fill="#FF6F00" />
+          <rect x="24" y="3" width="9" height="9" rx="2.1" fill="#00FFFF" />
+          <rect x="2" y="14" width="9" height="9" rx="2.1" fill="#6c757d" />
+          <circle cx="28.2" cy="25.2" r="5.4" fill="none" stroke="#FF6F00" stroke-width="1.4"/>
+          <circle cx="28.2" cy="25.2" r="1.5" fill="#00FFFF"/>
+          <path d="M28.2 18v-3" stroke="#FF6F00" stroke-width="1.2"/>
+          <path d="M21.7 25.2h-3" stroke="#FF6F00" stroke-width="1.2"/>
+          <path d="M28.2 32v3" stroke="#FF6F00" stroke-width="1.2"/>
+          <path d="M34.7 25.2h3" stroke="#FF6F00" stroke-width="1.2"/>
+        </svg>
+      </span>
+      <span class="node-data">
+        <span class="node-title">Seamless Integration</span>
+        <span class="node-list">
+          <span>Gemini in: Workspace, Chrome</span>
+          <span>Jules: Async Code Agent (Gemini 2.5 Pro)</span>
+        </span>
+        <span class="node-caption">Embedded Productivity</span>
+      </span>
+    </div>
+    <div class="node-zone edge">
+      <span class="node-icon" title="Edge Intelligence">
+        <!-- Smartphone + shield + chip -->
+        <svg width="34" height="34" viewBox="0 0 34 34">
+          <rect x="7" y="2" width="20" height="30" rx="4" fill="#0B6E6E" stroke="#00FFFF" stroke-width="1.7"/>
+          <rect x="14" y="8" width="6" height="7" rx="2" fill="#FF6F00"/>
+          <rect x="10" y="26" width="14" height="2.5" rx="1.2" fill="#00FFFF"/>
+          <ellipse cx="25" cy="9.5" rx="4" ry="2.2" fill="none" stroke="#FF6F00" stroke-width="1"/>
+          <rect x="27" y="17" width="5" height="6" rx="2.1" fill="none" stroke="#6c757d" stroke-width="1.1"/>
+        </svg>
+      </span>
+      <span class="node-data">
+        <span class="node-title">Edge Intelligence</span>
+        <span class="node-list">
+          <span>Gemma 3n: Mobile-Optimized (Qualcomm, MediaTek)</span>
+          <span>Privacy-First, Offline Ready</span>
+        </span>
+        <span class="node-caption">Local & Private Processing</span>
+      </span>
+    </div>
+    <div class="node-zone arch">
+      <span class="node-icon" title="Model Architecture">
+        <!-- Diffusion + autoregressive blocks -->
+        <svg width="35" height="35" viewBox="0 0 35 35">
+          <ellipse cx="17" cy="18" rx="13" ry="7" fill="none" stroke="#00FFFF" stroke-width="2"/>
+          <ellipse cx="17" cy="18" rx="6" ry="3.3" fill="none" stroke="#FF6F00" stroke-width="2"/>
+          <rect x="5" y="26" width="7" height="4.2" rx="1.8" fill="#0B6E6E"/>
+          <rect x="14" y="26" width="7" height="4.2" rx="1.8" fill="#FF6F00"/>
+          <rect x="23" y="26" width="7" height="4.2" rx="1.8" fill="#00FFFF"/>
+        </svg>
+      </span>
+      <span class="node-data">
+        <span class="node-title">Architectural Frontiers</span>
+        <span class="node-list">
+          <span>Gemini Diffusion: Text Gen Breakthrough</span>
+          <span style="font-size:0.85em;color:var(--gray);">LiveCodeBench 30.9%, BigCodeBench 45.4%</span>
+        </span>
+        <span class="node-caption">Exploring Diverse Architectures</span>
+      </span>
+    </div>
+    <div class="node-zone trust">
+      <span class="node-icon" title="Trust & Creativity">
+        <!-- Watermark + artist palette + circuit -->
+        <svg width="34" height="34" viewBox="0 0 34 34">
+          <ellipse cx="12" cy="18" rx="8.1" ry="6.6" fill="#0B6E6E" stroke="#00FFFF" stroke-width="1.4"/>
+          <ellipse cx="12" cy="18" rx="4.7" ry="3.3" fill="#FF6F00" />
+          <rect x="21" y="8" width="9" height="16" rx="3" fill="#0A2A4E" stroke="#FF6F00" stroke-width="1.3"/>
+          <rect x="24" y="16" width="3" height="7" rx="1.3" fill="#6c757d"/>
+          <circle cx="25.5" cy="12" r="1.2" fill="#00FFFF"/>
+          <path d="M9.6 21.2c1.4-1.6 4-0.5 4.3 1.4" stroke="#00FFFF" stroke-width="1"/>
+        </svg>
+      </span>
+      <span class="node-data">
+        <span class="node-title">Responsible Creation</span>
+        <span class="node-list">
+          <span>SynthID: Watermarking Billions</span>
+          <span>Flow: AI Filmmaking</span>
+          <span>Lyria 2: Music Tools</span>
+        </span>
+        <span class="node-caption">Ethical Frameworks & Creative Tools</span>
+      </span>
+    </div>
+    <div class="node-zone compute">
+      <span class="node-icon" title="Engagement/Scale">
+        <!-- Upward tokens graph -->
+        <svg width="32" height="32" viewBox="0 0 32 32">
+          <polyline points="4,28 10,22 17,14 27,5" fill="none" stroke="#FF6F00" stroke-width="2"/>
+          <circle cx="27" cy="5" r="2.2" fill="#00FFFF"/>
+          <rect x="17" y="14" width="2.9" height="4.3" rx="1.1" fill="#FF6F00"/>
+        </svg>
+      </span>
+      <span class="node-data">
+        <span class="node-title">Resource Dynamics</span>
+        <span class="node-list">
+          <span>Usage Metric Shift: Tokens &gt; Users (Enterprise)</span>
+        </span>
+        <span class="node-caption">Computational Scale</span>
+      </span>
+    </div>
+  </div>
+  <footer>
+    Illustrative data based on public announcements mid-2025.
+  </footer>
+</body>
+</html>
