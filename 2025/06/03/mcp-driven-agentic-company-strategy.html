@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Genesis of an Agent-First Enterprise</title>
+  <style>
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      background: #f8fafc;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+    .deck {
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 1.5rem 0.5rem 2.5rem 0.5rem;
+    }
+    .slide {
+      background: #fff;
+      border-radius: 1.2rem;
+      box-shadow: 0 2px 16px 0 rgba(0,0,0,0.07);
+      margin-bottom: 2rem;
+      padding: 1.5rem 1.2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.7rem;
+    }
+    .slide-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+    }
+    .slide-visual {
+      font-size: 2.2rem;
+      margin-bottom: 0.2em;
+    }
+    .slide-content {
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+    .slide-content ul {
+      margin: 0.5em 0 0 1.2em;
+      padding: 0;
+    }
+    .slide-content li {
+      margin-bottom: 0.5em;
+    }
+    .highlight {
+      color: #2563eb;
+      font-weight: 600;
+    }
+    .callout {
+      background: #e0f2fe;
+      border-radius: 0.7em;
+      padding: 0.7em 1em;
+      margin: 0.7em 0;
+      font-size: 0.98em;
+    }
+    @media (max-width: 600px) {
+      .deck { padding: 0.5rem 0.1rem 1.5rem 0.1rem; }
+      .slide { padding: 1.1rem 0.5rem; }
+      .slide-title { font-size: 1.08rem; }
+      .slide-visual { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <main class="deck">
+    <!-- Slide 1 -->
+    <section class="slide">
+      <div class="slide-title"><span class="slide-visual">🚀</span>Genesis of an Agent-First Enterprise</div>
+      <div class="slide-content">
+        <div class="highlight">[Nama Perusahaan]</div>
+        <div>Masa depan enterprise: hanya segelintir human experts, memimpin armada AI agents, unlock operational leverage yang belum pernah ada sebelumnya. <b>Kerja cerdas, impact besar.</b></div>
+      </div>
+    </section>
+
+    <!-- Slide 2 -->
+    <section class="slide">
+      <div class="slide-title"><span class="slide-visual">🏙️➡️🤖</span>Constraint & Opportunity: Redefining Scale</div>
+      <div class="slide-content">
+        <ul>
+          <li><b>Lean Venture Dilemma:</b> Solo founder & tim super ramping biasanya stuck—scaling itu mahal, hiring susah, apalagi di kota tier-3.</li>
+          <li><b>University Ecosystem Paradox (Malang):</b> Kota Malang, pusatnya universitas, jadi market fokus <i>dan</i> sandbox constraint—talent pool unik, kebutuhan lokal, harus super efisien & inovatif.</li>
+          <li><b>Tooling Tradisional = Bottleneck:</b> Software bisnis lama itu bloated, siloed, nggak agentic-friendly. Untuk extreme automation, harus build tools dari nol, khusus buat AI agents.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Slide 3 -->
+    <section class="slide">
+      <div class="slide-title"><span class="slide-visual">👩‍💻👨‍💻🤝🤖🤖🤖</span>Blueprint: Agent-First Organization</div>
+      <div class="slide-content">
+        <ul>
+          <li><b>Core Thesis:</b> Perusahaan di-architect & dijalankan max 3-4 "Agent Fleet Commanders"—bukan sekadar pakai AI, tapi <i>company-nya</i> didesain untuk AI agents dari awal.</li>
+          <li><b>Total Agent Orchestration:</b> Semua operasi—dari delivery sampai internal process—didelegasikan ke AI agents, tim manusia fokus di strategi & oversight.</li>
+          <li><b>4-Hour Workday Mandate:</b> Prinsip radikal: kerja manusia max 4 jam/hari, sisanya AI. Fokus ke strategic thinking, ethical guidance, self-growth.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Slide 4 -->
+    <section class="slide">
+      <div class="slide-title"><span class="slide-visual">🧠🔗🛠️☁️</span>Engine: Agentic Operating System (AOS)</div>
+      <div class="slide-content">
+        <ul>
+          <li><b>Central Intelligence (Claude):</b> Claude (Anthropic) = otak agent fleet. Reasoning & decision-making kelas dunia.</li>
+          <li><b>Standardized Tool Interaction (MCP):</b> Model Context Protocol = universal connector. Semua tools (internal & eksternal) bisa diakses agents secara modular & scalable.</li>
+          <li><b>Composable, Agent-Native Tools:</b> Semua tools dibangun dari nol, minimalist, single-responsibility, <i>hanya</i> untuk AI agents (bukan manusia!).</li>
+          <li><b>Resilient & Scalable Infra:</b> Cloudflare Workers & Durable Objects: deploy MCP servers & controller tanpa ribet DevOps, super scalable, low cost.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Slide 5 -->
+    <section class="slide">
+      <div class="slide-title"><span class="slide-visual">🧑‍✈️💻🤖</span>Symbiosis: How Humans Lead AI Fleets</div>
+      <div class="slide-content">
+        <ul>
+          <li><b>Human Role:</b> "Agent Fleet Commanders" = strategic command, ethical oversight (Ihsan & Justice), handle exceptions, maintain key relations.</li>
+          <li><b>Interface (Claude Desktop/Code):</b> Semua interaksi via Claude Desktop/Code (MCP Host). Nggak perlu custom UI, leverage SOTA client.</li>
+          <li><b>Delegation Example:</b>
+            <div class="callout">
+              <b>Commander:</b> "Draft proposal 'Passive Research Assistant' untuk fakultas teknik. Jelaskan benefit, integrasi <code>AcademicDbMCPServer</code>, dan timeline pilot."
+              <br/><b>Agent Fleet:</b> Claude orchestration, pakai MCP servers (knowledge base, document, scheduling) → hasil: proposal komplit.
+            </div>
+          </li>
+          <li><b>Continuous Improvement (Kaizen):</b> Rutin review & iterasi sistem human-agent. Kaizen mindset, always leveling up.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Slide 6 -->
+    <section class="slide">
+      <div class="slide-title"><span class="slide-visual">🎓🗺️</span>Proving Ground: University Ecosystem (Malang)</div>
+      <div class="slide-content">
+        <ul>
+          <li><b>Strategic Focus:</b> Value pertama: solve pain points universitas di Malang.</li>
+          <li><b>Dogfooding → Productization:</b> Internal tools dipakai sendiri, dioptimasi, lalu dipaket jadi "Ambient University-Facing Agent Tools".</li>
+          <li><b>Contoh Tool 1: Intelligent Schedule Coordinator</b>
+            <ul>
+              <li><b>Problem:</b> Jadwal kampus (dosen, mahasiswa, ruangan) ribet & makan waktu.</li>
+              <li><b>Solution:</b> Agent MCP (CalendarMCPServer, UniversityTimetableMCPServer) cari slot optimal, integrasi ke sistem kampus/Claude. Hemat waktu, minim konflik.</li>
+            </ul>
+          </li>
+          <li><b>Contoh Tool 2: Student Query Router</b>
+            <ul>
+              <li><b>Problem:</b> Mahasiswa butuh jawaban 24/7 untuk pertanyaan administrasi/akademik.</li>
+              <li><b>Solution:</b> Helpdesk AI (FaqKnowledgeBaseMCPServer, UniversityInfoMCPServer) jawab otomatis, eskalasi ke staff via StudentSupportTicketMCPServer kalau perlu.</li>
+            </ul>
+          </li>
+          <li><b>Etika (Ihsan & Justice):</b> Semua tools didesain adil, akurat, privasi terjaga, dan sensitif budaya.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Slide 7 -->
+    <section class="slide">
+      <div class="slide-title"><span class="slide-visual">💎🔑</span>Distinctive Edge: Beyond Automation</div>
+      <div class="slide-content">
+        <ul>
+          <li><b>Radical Leverage:</b> 3-4 orang, output setara perusahaan besar.</li>
+          <li><b>AI-Native Architecture:</b> Semua stack (AOS, tools, controller) pure agentic, bukan tempelan AI ke sistem lama.</li>
+          <li><b>Ethical Framework:</b> Ihsan & Justice = core design, bukan compliance. Trust & integrity di setiap keputusan.</li>
+          <li><b>Hyper-Focus & Iteration:</b> Struktur ramping + AI-assisted dev (Claude Code) → iterasi super cepat, adaptif ke kebutuhan kampus Malang.</li>
+          <li><b>Capital Efficiency:</b> Minim biaya SDM & software tradisional, investasi fokus ke AI & infra lean.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Slide 8 -->
+    <section class="slide">
+      <div class="slide-title"><span class="slide-visual">⏳⚡</span>The Zeitgeist: Why Now?</div>
+      <div class="slide-content">
+        <ul>
+          <li><b>SOTA LLMs (Claude):</b> Lompatan AI reasoning, agentic task makin feasible.</li>
+          <li><b>Agentic Standards (MCP):</b> MCP bikin ekosistem agent-tool interoperable, nggak lagi custom integration.</li>
+          <li><b>Serverless & Edge (Cloudflare):</b> Deploy & manage agentic infra tanpa DevOps berat, scalable & murah.</li>
+          <li><b>Agentic Shift:</b> Industri software & kerja shifting ke agentic. Kita di garis depan perubahan ini.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Slide 9 -->
+    <section class="slide">
+      <div class="slide-title"><span class="slide-visual">🧑‍🎓🛠️</span>The Architect: [Nama Anda], Founder</div>
+      <div class="slide-content">
+        <ul>
+          <li><b>Solo Founder & Visionary:</b> Visi jangka panjang, eksekusi hands-on.</li>
+          <li><b>Expert Generalist:</b> Software, AI/ML, DevOps, company ops—skillset lengkap untuk bangun agent-first system dari nol.</li>
+          <li><b>Unwavering Commitment:</b> Komitmen penuh ke model agentic-ethics ini, ingin redefine cara kerja & impact.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Slide 10 -->
+    <section class="slide">
+      <div class="slide-title"><span class="slide-visual">🤝🌱</span>The Invitation / The Way Forward</div>
+      <div class="slide-content">
+        <div class="callout">
+          <b>Option A (Investment):</b><br/>
+          <b>The Ask:</b> Cari seed funding [nominal] buat next phase.<br/>
+          <b>Use of Funds:</b>
+          <ul>
+            <li>Percepat development AOS (Lightweight Controller, MCP Servers).</li>
+            <li>Refine & deploy University-Facing Tools di pilot Malang.</li>
+            <li>Tambah 1-2 Agent Fleet Commander top.</li>
+          </ul>
+          <b>Future Vision:</b> Validasi model, lalu scale ke industri & tantangan lain.<br/>
+          <b>Call to Action:</b> Let’s talk—join redefining enterprise masa depan.
+        </div>
+        <div class="callout">
+          <b>Option B (University Partnership):</b><br/>
+          <b>Proposal:</b> Kolaborasi pilot "Intelligent Schedule Coordinator" & "Student Query Router" di [Nama Fakultas/Universitas].<br/>
+          <b>Mutual Benefits:</b>
+          <ul>
+            <li><b>Untuk Kampus:</b> Solusi real, experience naik, branding tech-forward.</li>
+            <li><b>Untuk [Nama Perusahaan]:</b> Proving ground, feedback, case study agentic model.</li>
+          </ul>
+          <b>Call to Action:</b> Meeting lanjut, diskusi kebutuhan & pilot.
+        </div>
+        <div class="callout">
+          <b>Option C (Key Hires/Advisors):</b><br/>
+          <b>Opportunity:</b> Gabung [Nama Perusahaan], ground floor agentic revolution. Bantu bentuk paradigma baru kerja & AI.
+          <br/><b>We're Looking For:</b> "Agent Fleet Commanders"—expert generalist, systems thinker, etis, passionate AI.
+          <br/><b>Call to Action:</b> Kalau mau bangun masa depan AI-native org, let’s connect!
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
